@@ -3,4 +3,12 @@ node_js:
   - "iojs"
   - "6"
 before_script:
-  - npm i 
+  - npm i
+notifications: # set notification options
+  email:
+    recipients:
+      - sloot@slootdev.com
+
+      # change is when the repo status goes from pass to fail or vice versa
+    on_success: always
+    on_failure: always
